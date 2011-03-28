@@ -1,0 +1,30 @@
+#qt cross compile
+
+##qt lib
+
+    qtopia-core-opensource-src-4.2.2.tar.gz
+
+    1 compile  use
+    2 run  use
+
+# tar zxvff qtopia....
+    
+    ./configure
+
+    vi /etc/profile
+
+    add comtent: export PATH=$PATH:/home/jiesse/.../bin   can be use by  all users
+    or 
+    vi .bashrc
+
+    add comtent : export PATH=$PATH:/home/jiesse/.../bin  only use by jiesse
+
+
+    source /etc/profile
+
+    system(cmdline);  cmdline is the command line ;
+
+    etc: sprintf(cmdline,"rm -rf %s\n",filename);
+
+    effect: remove();
+

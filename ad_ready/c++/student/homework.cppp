@@ -1,0 +1,140 @@
+template <class T>
+
+class Node
+{
+	public:
+		Node<T>* next;
+		T data;
+};
+
+template <class T>
+class List
+{
+	protected:
+		Node<T>* head;
+
+	public:
+		List()
+		{
+		
+		}
+
+		~List()
+		{
+		
+		}
+
+		void insertHead(T data)
+		{
+		
+		}
+
+		Node<T>* getHead()
+		{}
+
+		Node<T>* removeHead()
+		{}
+
+		Node<T>* getNext(Node<T>* p)
+		{}
+
+		bool isEmpty()
+		{}
+};
+
+class MyString
+{
+	protected:
+		char* data;
+		int len;
+	public:
+		MyString()
+		{}
+
+		MyString(char* p)
+		{}
+
+		MyString(MyString& r)
+		{}
+
+		MyString& operator=(MyString& r)
+		{}
+
+		MyString& operator=(char* p)
+		{}
+
+		List<MyString> Split(char ch)
+		{}
+};
+
+class Person
+{
+	public:
+		virtual void print() = 0;
+
+		MyString name;
+		MyString tel;
+		MyString type;
+		int age;
+};
+
+class Teacher : public Person
+{
+	public:
+		void print()
+		{
+			
+		    cout  <<  Teacher  << endl;
+		}
+};
+
+class Student: public Person
+{
+	public:
+		int score;
+		void print()
+		{
+		    cout << Student  << endl <<  score << endl;
+		}
+};
+
+
+/* Persons 表示人的集合 */
+class Persons
+{
+	public:
+		List<Person*> persons;
+
+		/* init函数将文件的内容读取出来，放入persons链表中 */
+		void init(char* file)
+		{
+			// 作业要求的代码
+            int fd ;
+            char buff[50];
+            fd = open(file,O_RDONLY);
+            if(fd < 0)
+            {
+                    cout <<  "open error " << endl;
+            }
+            List<Person>* head = malloc(30); 
+
+            bufff = fgets();
+
+            
+
+		}
+
+		/* print将链表的内容打印出来 */
+		void print()
+		{
+		
+		}
+};
+
+int main()
+{
+	Persons p;
+	p.init("input.txt");
+	p.print();
+	return 0;
+}

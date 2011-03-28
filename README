@@ -1,1 +1,23 @@
-this is AD Machine
+
+
+    adm_cgi,adm_doc
+    /config/httpd.conf
+
+    change the path
+
+
+    admarm : use qt, the ad mathine face
+
+    managen: managent the admarm: use qt 
+
+    adm_cgi: the httpd server cgi  files
+
+    adm_doc : the httpd server html files
+
+
+    ManAgent : teacher write 
+
+    server_sync.c : teacher write server sync function
+
+
+

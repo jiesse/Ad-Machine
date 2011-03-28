@@ -1,0 +1,5 @@
+xgl  32 teacher  123456789
+xiaomin 20 student 123456789
+liu   22 student 123456789
+guo 25 student 123456789
+wang 22 student 123456789
